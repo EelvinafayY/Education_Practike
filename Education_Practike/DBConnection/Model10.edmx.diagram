@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0ee24775de38432e87204ebc70ced34f" Name="Diagram1">
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Academics" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Animal_Fayzullina" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Control_Fayzullina" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Countries" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Countries_Fayzullina" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Department" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Disciplina" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Employee" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Engineer" Width="1.5" PointX="7.5" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Exam" Width="1.5" PointX="9.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Faculty" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Flowers_Fayzullina" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Speciality" Width="1.5" PointX="5.25" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Student" Width="1.5" PointX="7.5" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Students" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Teacher" Width="1.5" PointX="7.5" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Zav_Cafedri" Width="1.5" PointX="7.5" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Zayavka" Width="1.5" PointX="10.5" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ed_Practice_Fay320Model.Licei" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="Ed_Practice_Fay320Model.FK_Department_Faculty" ManuallyRouted="false" />
+        <AssociationConnector Association="Ed_Practice_Fay320Model.FK_Disciplina_Department1" ManuallyRouted="false" />
+        <AssociationConnector Association="Ed_Practice_Fay320Model.FK_Employee_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="Ed_Practice_Fay320Model.FK_Speciality_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="Ed_Practice_Fay320Model.FK_Exam_Disciplina" ManuallyRouted="false" />
+        <AssociationConnector Association="Ed_Practice_Fay320Model.FK_Zayavka_Disciplina" ManuallyRouted="false" />
+        <AssociationConnector Association="Ed_Practice_Fay320Model.FK_Engineer_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Ed_Practice_Fay320Model.FK_Exam_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Ed_Practice_Fay320Model.FK_Teacher_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Ed_Practice_Fay320Model.FK_Zav_Cafedri_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Ed_Practice_Fay320Model.FK_Exam_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="Ed_Practice_Fay320Model.FK_Student_Speciality" ManuallyRouted="false" />
+        <AssociationConnector Association="Ed_Practice_Fay320Model.FK_Zayavka_Speciality" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

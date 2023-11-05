@@ -1,0 +1,96 @@
+﻿<Page x:Class="Education_Practike.Pages.ExamPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Education_Practike.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ExamPage"
+      Loaded="Page_Loaded">
+
+    <Grid Background="#FFC3BDB6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="4" Grid.ColumnSpan="4"
+            Grid.Row="0" x:Name="UserNameTB"
+            HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FF675345" FontWeight="Bold">
+        </TextBlock>
+        <TextBlock Grid.Column="2" Grid.ColumnSpan="4"
+            Grid.Row="1" Text="Экзамены"
+            HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="#FF675345" FontWeight="Bold">
+        </TextBlock>
+        <Button x:Name="BackBT"
+            Grid.Column="0" Grid.ColumnSpan="2"
+            Grid.Row="0"
+            Content="Вернуться назад"
+            HorizontalAlignment="Center" VerticalAlignment="Center"
+            Width="200" Height="45" Background="#FF867162" FontSize="20" Foreground="#FFCAB397" Margin="10" Click="BackBT_Click"></Button>
+        <ListView x:Name="ExamLV"
+                  Grid.Column="1" Grid.ColumnSpan="6"
+                  Grid.Row="2" Grid.RowSpan="3"
+                  SelectionChanged="ExamLV_SelectionChanged" >
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="Дисциплина" Width="160">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Disciplina.Name}"></TextBlock>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Студент" Width="180">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Student.Surname}"></TextBlock>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        
+                        <GridViewColumn Header="Дата" Width="80">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Date}"></TextBlock>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Аудитория" Width="80">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Lecture_Hall}"></TextBlock>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Оценка" Width="80">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding estimation}"></TextBlock>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Page>
